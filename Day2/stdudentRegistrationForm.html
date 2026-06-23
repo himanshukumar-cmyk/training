@@ -6,18 +6,18 @@
     <title>Student Registration Form</title>
 </head>
 <body>
-    <footer>
+    <header>
         <h1>Student Registration Form</h1>
-    </footer>
+    </header>
     <form>
         <label for="name">Name: </label>
-        <input type="text" id="name" name="name" required/>
+        <input type="text" id="name" name="name" placeholder="Enter your name..." required/>
         <br/><br/>
         <label for="email">Email: </label>
-        <input type="email" id="email" name="email" required/>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email..." required/>
         <br/><br/>
         <label for="phone">Phone Number: </label>
-        <input type="number" id="phone" name="phone" minlength="10" required/>
+        <input type="number" id="phone" name="phone" minlength="10" placeholder="please enter your phone number " required/>
         <br/>
         <p>Please select the gender: </p>
         <input type="radio" id="male" name="gender" value="male" />
@@ -28,7 +28,7 @@
         <label for="other">other</label>
         <br/><br/>
         <label for="dob">Date of Birth: </label>
-        <input type="date" id="dob" name="dob" required/>
+        <input type="date" id="dob" name="dob" placeholder="Select your DOB " required/>
         <br/><br/>
         <label for="course">Select Course: </label>
         <select id="course" name="course" required>
