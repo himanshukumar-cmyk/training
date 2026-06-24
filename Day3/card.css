@@ -8,7 +8,46 @@ body{
     background: rgb(238,242,255);
 }
 
-header{
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    padding: 5px 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 700px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.navbar a:hover{
+    transform: scale(1.1);
+    color:#00adb5;
+}
+
+.navbar a:active{
+    color:#ff5722;
+}
+
+#logo{
+    height: 70px;
+    width: 70px;
+    background: url(logo.avif);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+section{
     text-align: center;
 }
 
