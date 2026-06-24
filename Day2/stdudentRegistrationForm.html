@@ -9,14 +9,12 @@
     <header>
         <h1>Student Registration Form</h1>
     </header>
-    <fieldset>
-    <legend>Student Information</legend>
     <form>
         <label for="name">Name: </label>
-        <input type="text" id="name" name="name" placeholder="Enter Name" required/>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required/>
         <br/><br/>
         <label for="email">Email: </label>
-        <input type="email" id="email" name="email" placeholder="Enter Email" required/>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required/>
         <br/><br/>
         <label for="phone">Phone Number: </label>
         <input type="tel" pattern="[0-9]{10}"placeholder="Enter 10-digit number"/>
@@ -30,7 +28,7 @@
         <label for="other">other</label>
         <br/><br/>
         <label for="dob">Date of Birth: </label>
-        <input type="date" id="dob" name="dob" placeholder="Select DOB " max="2010-06-23" min="2004-01-01" required/>
+        <input type="date" id="dob" name="dob" placeholder="Select your DOB " max="2010-06-23" min="2004-01-01" required/>
         <br/><br/>
         <label for="course">Select a Course: </label>
         <select id="course" name="course" required>
@@ -44,6 +42,5 @@
         <button type="submit">Submit</button> 
         <button type="reset">Reset</button>
     </form>
-    </fieldset>
 </body>
 </html>
