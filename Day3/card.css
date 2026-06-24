@@ -1,0 +1,82 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(238,242,255);
+}
+
+header{
+    text-align: center;
+}
+
+.plans{
+    height: 75vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.plan{
+    padding:20px;
+    width: 390px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background:rgb(255,255,255);
+    border:none;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.4s ease;
+    position:relative;
+}
+
+.about_plan{
+    text-align: center;
+    margin: 20px;
+}
+
+.price{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #4f46e5;
+}
+
+.price span{
+    font-size: 16px;
+    color:#666;
+}
+
+.features{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: rgb(0,0,0);
+    border: none;
+    color: rgb(255,255,255);
+    width: 140px;
+    border-radius: 20px;
+    height: 40px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+.plan:hover{
+   transform: scale(1.08);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+h1{
+    margin-top: 40px;
+}
+
+button:active{
+    background-color: #333333;
+}
