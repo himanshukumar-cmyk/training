@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(238,242,255);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    padding: 5px 20px;
+}
+
+#logo{
+    height: 70px;
+    width: 70px;
+    background: url(../Day3/logo.avif);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width:44rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+    transition: 0.3s ease;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+nav a:hover{
+    transform: scale(1.03);
+    color: #00adb5;
+}
+
+nav a:active{
+    color:#ff5722;
+}
+
+.hamburger{
+    display:none;
+    color: rgb(255,255,255);
+}
+
+.text{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-left:1.5rem;
+    gap: 1.5rem;
+    width: 270px;
+    border-radius: 15px;
+    background:rgb(255,255,255);
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.4s ease;
+    position:relative;
+}
+
+.d11{
+    height:180px;
+    width:180px;
+    background: url(product.png);
+    background-size: cover;
+    margin:10px;
+}
+
+.d12{
+    height:180px;
+    width:180px;
+    background: url(service.png);
+    background-size: cover;
+    margin:10px;
+}
+
+.d13{
+    height:180px;
+    width:180px;
+    background: url(team.png);
+    background-size: cover;
+    margin:10px;
+}
+
+.d14{
+    height:180px;
+    width:180px;
+    background: url(blogs.png);
+    background-size: cover;
+    margin:10px;
+}
+
+button{
+    background-color:rgb(90, 130, 211) ;
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    border-radius: 20px;
+    height: 40px;
+    box-shadow: 0px 4px 10px rgba(135, 159, 238, 0.4);
+}
+
+.card:hover{
+    transform: scale(1.04);
+}
+
+button:active{
+    background-color: #333333;
+}
+
+footer{
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+@media (max-width: 765px) {
+
+    .hamburger{
+        display: block;
+    }
+
+    nav{
+       display: none;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+}

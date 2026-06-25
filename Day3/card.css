@@ -6,6 +6,10 @@
 
 body{
     background: rgb(238,242,255);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 nav{
@@ -29,6 +33,7 @@ nav{
     color: rgb(255,255,255);
     transition: 0.4s ease;
     position: relative;
+    font-size: 1.2rem;
 }
 
 .navbar a:hover{
@@ -124,7 +129,7 @@ footer{
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: auto;
     font-size: 14px;
 }
 
