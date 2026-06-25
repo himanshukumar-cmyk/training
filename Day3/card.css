@@ -1,0 +1,150 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(238,242,255);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    padding: 5px 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.navbar a:hover{
+    transform: scale(1.1);
+    color:#00adb5;
+}
+
+.navbar a:active{
+    color:#ff5722;
+}
+
+#logo{
+    height: 70px;
+    width: 70px;
+    background: url(logo.avif);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+section{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.plans{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.plan{
+    padding:20px;
+    width: 100%;
+    max-width: 390px;
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background:rgb(255,255,255);
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.4s ease;
+    position:relative;
+}
+
+.about_plan{
+    text-align: center;
+    margin: 20px;
+}
+
+.price{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #4f46e5;
+}
+
+.price span{
+    font-size: 16px;
+    color:#666;
+}
+
+.features{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: rgb(0,0,0);
+    border: none;
+    color: rgb(255,255,255);
+    width: 140px;
+    border-radius: 20px;
+    height: 40px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+.plan:hover{
+   transform: scale(1.03);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+h1{
+    margin-top: 40px;
+}
+
+footer{
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+button:active{
+    background-color: #333333;
+}
+
+@media (max-width: 768px) {
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .plans{
+        flex-direction: column;
+    }
+}
