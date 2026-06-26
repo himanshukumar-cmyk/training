@@ -21,8 +21,8 @@ header{
 }
 
 #logo{
-    height: 70px;
-    width: 70px;
+    height: 55px;
+    width: 55px;
     background: url(../Day3/logo.avif);
     background-size: cover;
     border-radius: 50%;
@@ -42,6 +42,7 @@ nav a{
     transition: 0.3s ease;
     position: relative;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 nav a:hover{
@@ -61,6 +62,7 @@ nav a:active{
 .text{
     text-align: center;
     padding-top: 20px;
+    margin-bottom: 1rem;
 }
 
 .cards{
@@ -79,47 +81,40 @@ nav a:active{
     align-items: center;
     text-align: center;
     padding: 1rem;
-    margin-top: 1.5rem;
-    margin-left:1.5rem;
-    gap: 1.5rem;
-    width: 270px;
-    border-radius: 15px;
+    gap: 2rem;
+    max-width: 270px;
+    width: 100%;
+    border-radius: 1rem;
     background:rgb(255,255,255);
     box-shadow:0 10px 30px rgba(0,0,0,0.1);
     transition:0.4s ease;
     position:relative;
 }
 
-.d11{
+.cardimg{
     height:180px;
     width:180px;
+    margin:10px;
+}
+
+.productimg{
     background: url(product.png);
     background-size: cover;
-    margin:10px;
 }
 
-.d12{
-    height:180px;
-    width:180px;
+.serviceimg{
     background: url(service.png);
     background-size: cover;
-    margin:10px;
 }
 
-.d13{
-    height:180px;
-    width:180px;
+.teamimg{
     background: url(team.png);
     background-size: cover;
-    margin:10px;
 }
 
-.d14{
-    height:180px;
-    width:180px;
+.blogimg{
     background: url(blogs.png);
     background-size: cover;
-    margin:10px;
 }
 
 button{
@@ -130,6 +125,7 @@ button{
     border-radius: 20px;
     height: 40px;
     box-shadow: 0px 4px 10px rgba(135, 159, 238, 0.4);
+    cursor:pointer;
 }
 
 .card:hover{
@@ -141,10 +137,10 @@ button:active{
 }
 
 footer{
-    background-color: #333333;
-    color: white;
+    background-color: #fcfcfcea;
+    color: rgb(0,0,0);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 14px;
     margin-top: auto;
 }
